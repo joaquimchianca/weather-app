@@ -38,7 +38,8 @@ function App() {
 	const searchForecast = (event) => {
 		if (event.key === "Enter") {
 			axios.get(url_forecast).then(response => {
-				setForecast(response.list)
+				setForecast(response.data.list)
+				console.log(response.data.list)
 			})
 		}
 	}
@@ -86,10 +87,10 @@ function App() {
 					type="text"
 					placeholder="Enter Location"
 					onChange={event => setLocation(event.target.value)}
-					onKeyDown={event => searchLocation(event)} />
+					onKeyDown={event => search(event)} />
 			</div>
 
-			{showElements && (<WeatherContainer data={data} />)}
+			{showElements && (<WeatherContainer data={data} forecast={forecast}/>)}
 		</div>
 	)
 }
