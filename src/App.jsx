@@ -28,7 +28,7 @@ function App() {
 					if (error.response && error.response.status === 404) {
 						alert('Localização não encontrada')
 					} else {
-						alert('Erro na requisição')
+						alert('Erro na requisição de clima atual')
 					}
 				})
 		}
@@ -40,6 +40,9 @@ function App() {
 			axios.get(url_forecast).then(response => {
 				setForecast(response.data.list)
 				console.log(response.data.list)
+			})
+			.catch(error => {
+				alert("Erro na requisição de previsão do tempo")
 			})
 		}
 	}
