@@ -1,21 +1,14 @@
 import React from 'react'
 import Forecast from './Forecast'
 import Info from './Info'
+import Principal from './Principal'
 
 function WeatherContainer({ data, forecast }) {
 
   return (
     <div className="container">
       <div className="top">
-          <div className="location">
-            <p>{data.name}{data.sys ? `, ${data.sys.country}` : null}</p>
-          </div>
-          <div className="temp">
-            {data.main ? <h1>{data.main.temp} °C</h1> : null}
-          </div>
-          <div className="description">
-            <p>{data.weather ? data.weather[0].description : null}</p>
-          </div>
+          <Principal data={data}/>
       </div>
       <div className="center">  
         { forecast && <Forecast forecast={forecast}/>}
