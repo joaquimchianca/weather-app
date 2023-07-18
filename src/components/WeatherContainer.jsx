@@ -1,7 +1,4 @@
 import React from 'react'
-// import axios from 'axios'
-import './forecast.css'
-// import Forecast from './Forecast'
 
 function WeatherContainer({ data, forecast }) {
 
