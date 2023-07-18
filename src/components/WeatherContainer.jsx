@@ -11,7 +11,7 @@ function WeatherContainer({ data, forecast }) {
           <Principal data={data}/>
       </div>
       <div className="center">  
-        { forecast && <Forecast forecast={forecast}/>}
+        { forecast.length === 40 && <Forecast forecast={forecast}/>}
       </div>
       <div className="bottom">
         <Info data={data}/>
