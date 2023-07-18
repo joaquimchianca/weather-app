@@ -88,7 +88,7 @@ function App() {
 				<input
 					value={location}
 					type="text"
-					placeholder="Enter Location"
+					placeholder="Procure por uma cidade"
 					onChange={event => setLocation(event.target.value)}
 					onKeyDown={event => search(event)} />
 			</div>
