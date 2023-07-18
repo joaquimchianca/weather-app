@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem
+}
+
+/* BACKGROUND OVERLAY */
+
+.app {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+
+.app.sunset::before {
+  content: '';
+  background: url(./assets/sunset.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.thunderstorm::before {
+  content: '';
+  background: url(./assets/thunderstorm.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.drizzle::before {
+  content: '';
+  background: url(./assets/drizzle.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.rain::before {
+  content: '';
+  background: url(./assets/rain.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.snow::before {
+  content: '';
+  background: url(./assets/snow.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.clear::before {
+  content: '';
+  background: url(./assets/clear.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.clouds::before {
+  content: '';
+  background: url(./assets/clouds.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app.mist::before {
+  content: '';
+  background: url(./assets/mist.jpg) no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.app input {
+  border-radius: 25px;
+  background-color: rgba(255,255,255,0.1);
+  padding: .7rem 1.25rem;
+  color: #f8f8f8;
+  border: 1px solid white;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+
+/* CONTAINER - APP INFO */
+
+.container {
+  max-width: 700px;
+  height: 650px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .other-info {
+  width: 100%;
+  display:flex;
+  padding: 1rem;
+  justify-content: space-around;
+  margin: 1rem auto;
+  text-align: center;
+  border-radius: 12px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+.bottom .caption {
+  font-size: 1.3rem;
+}
+
+.bold {
+  font-weight: 700;
+}
