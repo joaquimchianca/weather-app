@@ -22,7 +22,6 @@ function App() {
 				.get(url_weather).then(response => {
 					setData(response.data)
 					setShowElements(true)
-					//console.log(response.data)
 				})
 				.catch(error => {
 					if (error.response && error.response.status === 404) {
@@ -39,7 +38,6 @@ function App() {
 		if (event.key === "Enter") {
 			axios.get(url_forecast).then(response => {
 				setForecast(response.data.list)
-				console.log(response.data.list)
 			})
 			.catch(error => {
 				alert("Erro na requisição de previsão do tempo")

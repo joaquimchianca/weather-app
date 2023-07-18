@@ -2,6 +2,7 @@ import React from "react";
 
 function Forecast({forecast}) {
 
+    // funcao para formatar a data de acordo com os dados da API
     function format(dateInput) {
         const [datePart, timePart] = dateInput.split(' ')
         const [year, month, day] = datePart.split('-')
